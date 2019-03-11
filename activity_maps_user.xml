@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        tools:context="com.example.ngouthamkumar.abulance108.MapsUser" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:id="@+id/Short"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Get Short distance"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="3dp"/>
+
+        <Button
+            android:id="@+id/Book"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="3dp"/>
+
+            <Button
+            android:id="@+id/signout"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+            android:text="SignOut" />
+        </LinearLayout>
+
+    </LinearLayout>

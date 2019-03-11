@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/activity_main"
+tools:context="com.example.ngouthamkumar.abulance108.UserSignIn">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageVIew"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/red" />
+
+    <ImageView
+        android:background="@drawable/background_white"
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>
+<com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+    android:layout_marginTop="400dp"
+    android:id="@+id/layoutInput"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    app:corner_radius="20dp"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="150dp">
+
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/google"
+        android:layout_marginTop="25dp">
+
+    </com.google.android.gms.common.SignInButton>
+
+</com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+</RelativeLayout>
